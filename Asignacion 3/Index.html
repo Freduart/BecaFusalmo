@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asignacion 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="lib.js"></script>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="mueveReloj()">
+    
+    <div class="row ">
+        <div class="col-md-12 center"><h1>Sistema de inventario</h1></div>    
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 formulario" >
+            <h3>Formulario</h3>
+            <form action="" method="POST">
+                <label for="">Codigo: </label>
+                <br>            
+                <input type="text" id="codigo">
+                <br>
+                <br>
+                <label for="">Elemento: </label>
+                <br>
+                <input type="text" id="elemento">
+                <br>
+                <br>
+                <label for="">Costo: </label>
+                <br>
+                <input type="number" id="costo">
+                <br>
+                <br>
+                <label for="">Fecha: </label>
+                <br>
+                <input type="Date" id="fecha">
+                <br><br>
+                <button type="button" class="btn btn-success" onclick="addRow()">Agregar</button>                   
+            </form>
+        </div>
+
+        <div class="col-md-8 tabla" >
+            <h3 >Tabla de Inventario</h3>
+            <table id="myTable" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Elemento</th>
+                        <th scope="col">Costo</th>
+                        <th scope="col">Fecha</th>
+                        <!-- <th scope="col">Opcion</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 datos" >
+            <h3>Fredy Rolando Martínez Méndez</h3>
+            <br>            
+            <h4 id="TimeOut"></h4>
+
+            
+        </div>
+        <div class="col-md-8 costos" >
+            <h3 id="costo">Total de costos:</h3>
+            <br>
+            <h3 id="elementos">Total de elementos:</h3>
+            
+        </div>
+    </div>
+</body>
+</html>

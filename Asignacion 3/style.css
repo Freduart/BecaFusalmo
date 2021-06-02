@@ -1,0 +1,49 @@
+.center{
+    text-align: center;
+    color: brown;
+    
+    padding-bottom: 10px;
+}
+
+label{
+    size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+table{
+    background-color: white; 
+    margin-right: 10px;
+}
+
+div{
+    text-align: center;
+    border: 1px solid #000;
+}
+
+
+.formulario{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-color:lightskyblue;
+}
+
+.tabla{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-color:lightcoral;
+}
+
+.datos{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-color: lightsalmon;
+
+}
+
+.costos{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-color:skyblue;
+    text-align: right;
+}
